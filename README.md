@@ -18,11 +18,11 @@
 ***
 ***[Мис ИБ](https://github.com/fpkaos)***
 ---
-1) База name_group, id_group \n
+1) База name_group, id_group 
 2) Рефакторинг 
 *** 
 ***[Чикишеа Тимур](https://github.com/TimurChikishev)***
 ---
-1) Полностью наладил взаимодействие с telegram. Были использованы [BOT API](https://tlgrm.ru/docs/bots/api) \n
+1) Полностью наладил взаимодействие с telegram. Были использованы [BOT API](https://tlgrm.ru/docs/bots/api) 
 2) Рефакторинг
 ***
