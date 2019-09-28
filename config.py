@@ -2,8 +2,8 @@ token_telegram = ''
 token_vk = ''
 
 correct_id = {
-    'telegram_id' : 'mis',
-    'telegram_id' : 'mr'
+    'telegram_id' : 'teacher_name',
+    'telegram_id' : 'teacher_name'
 }
 
 groups = {
