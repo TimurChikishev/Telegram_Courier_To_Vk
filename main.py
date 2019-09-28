@@ -23,11 +23,12 @@ def send_msg(id_group, message):
                      'random_id': 0}) # просто необходимо после абгрейда до версии longpool - 0.50 
 
 @bot.message_handler(content_types=['text']) 
-def echo_msg(message): 
-    for group in config.groups: # идет по dict() вида {'352' : 1, '351' : 2}
-        if group in message.text: # проверяет есть ли в сообщении 352, 351....
-            # простое упрощение для последуйщего написания кода + скипаем необходимый слэш 
-            send_msg(group, message.text[message.text.find('/')+1:]) 
+def echo_msg(message):
+    if str(message.from_user.id) in config.correct_id: 
+        for group in config.groups: # идет по dict() вида {'352' : 1, '351' : 2}
+            if group in message.text: # проверяет есть ли в сообщении 352, 351....
+                # простое упрощение для последуйщего написания кода + скипаем необходимый слэш 
+                send_msg(group, message.text[message.text.find('/')+1:]) 
 
 if __name__ == "__main__":  
     while True: # если срабатывает except, то заного 
